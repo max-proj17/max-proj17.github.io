@@ -1,0 +1,26 @@
+.text-lg {
+    margin-bottom: 16px; /* Adjust the value as needed */
+}
+.status-label {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-top: 8px;
+}
+
+/* Additional styles for different statuses */
+.status-label.completed {
+    background-color: #28a745; /* Green for completed */
+}
+
+.status-label.in-progress {
+    background-color: #ffc107; /* Yellow for in progress */
+}
+
