@@ -15,12 +15,3 @@
     margin-top: 8px;
 }
 
-/* Additional styles for different statuses */
-.status-label.completed {
-    background-color: #28a745; /* Green for completed */
-}
-
-.status-label.in-progress {
-    background-color: #ffc107; /* Yellow for in progress */
-}
-
