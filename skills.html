@@ -2,103 +2,116 @@
 <section id="skills" class="bg-gray-100 py-8">
     <h2 class="text-3xl font-bold mb-4">Skills</h2>
     <div class="container mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="flex flex-wrap justify-between">
             <!-- Programming Languages -->
-            <div class="p-4 bg-blue-100 rounded-lg">
-                <h3 class="text-lg font-bold text-blue-800 mb-2">Software</h3>
-                <h4 class="text-md font-bold text-blue-700">Programming Languages</h4>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Javascript</li>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>MATLAB</li>
-                </ul>
-                <h4 class="text-md font-bold text-blue-700">Frameworks and Libraries</h4>
-                <ul>
-                    <li>LibTorch</li>
-                    <li>OpenCV</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>JavaFX</li>
-                    <li>Numpy</li>
-                    <li>Matplotlib</li>
-                    <li>Pandas</li>
-                    <li>PostgreSQL</li>
-                </ul>
-                <h4 class="text-md font-bold text-blue-700">Technologies and Tools</h4>
-                <ul>
-                    <li>CUDA</li>
-                    <li>Docker</li>
-                    <li>JetPack SDK</li>
-                    <li>Intel Realsense SDK</li>
-                </ul>
+            <div class="skill-category p-4 bg-blue-100 rounded-lg m-2">
+                <h3 class="text-lg font-bold text-blue-800 mb-2 cursor-pointer">Software</h3>
+                <div class="skill-content hidden">
+                    <h4 class="text-md font-bold text-blue-700">Programming Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                    </ul>
+                    <h4 class="text-md font-bold text-blue-700">Frameworks and Libraries</h4>
+                    <ul>
+                        <li>LibTorch</li>
+                        <li>OpenCV</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>JavaFX</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                        <li>Pandas</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <h4 class="text-md font-bold text-blue-700">Technologies and Tools</h4>
+                    <ul>
+                        <li>CUDA</li>
+                        <li>Docker</li>
+                        <li>JetPack SDK</li>
+                        <li>Intel Realsense SDK</li>
+                    </ul>
+                </div>
             </div>
-            <!-- Math & Applied Theory -->
-            <div class="p-4 bg-yellow-100 rounded-lg">
-                <h3 class="text-lg font-bold text-yellow-800 mb-2">Applied Theory</h3>
-                <ul>
 
-                    <li>Electromagnetic Theory</li>
-                    <li>Linear/Non-Linear Control Systems</li>
-                    <li>Optimization</li>
-                    <li>Vector Calculus</li>
-                    <li>Caluclus I and II</li>
-                    <li>Linear Algebra</li>
-                    <li>Differential Equations</li>
-                    <li>Robot Dynamic/Kinematic Control</li>
-                </ul>
+            <!-- Math & Applied Theory -->
+            <div class="skill-category p-4 bg-yellow-100 rounded-lg m-2">
+                <h3 class="text-lg font-bold text-yellow-800 mb-2 cursor-pointer">Applied Theory</h3>
+                <div class="skill-content hidden">
+                    <ul>
+                        <li>Electromagnetic Theory</li>
+                        <li>Linear/Non-Linear Control Systems</li>
+                        <li>Optimization</li>
+                        <li>Vector Calculus</li>
+                        <li>Calculus I and II</li>
+                        <li>Linear Algebra</li>
+                        <li>Differential Equations</li>
+                        <li>Robot Dynamic/Kinematic Control</li>
+                    </ul>
+                </div>
             </div>
+
             <!-- Hardware -->
-            <div class="p-4 bg-purple-100 rounded-lg">
-                <h3 class="text-lg font-bold text-purple-800 mb-2">Hardware</h3>
-                <h4 class="text-md font-bold text-purple-700">Embedded Systems</h4>
-                <ul>
-                    <li>Internet of Things (IoT)</li>
-                    <li>SBCs (Nvidia Jetson, Raspberry Pi)</li>
-                    <li>Microcontrollers (Arduino, Rapberry Pi Pico, Teensy 4.1, ATmega328p) </li>
-                    <li>Data Protocols (SPI, I2C, UART)</li>
-                    <li>Integrated Circuits (DAC, ADC, 555 Timers)</li>
-                </ul>
-                <h4 class="text-md font-bold text-purple-700">Circuit Design</h4>
-                <ul>
-                    <li>Oscilloscopes
-                    <li>Function Generators</li> 
-                    <li>Multimeters</li>
-                    <li>Power Supplies</li>
-                    <li>Integrated Circuits (Op Amps, etc)</li>
-                    <li>Components (BJTs, MOSFETs, RTL, capacitors)</li>
-                </ul>
+            <div class="skill-category p-4 bg-purple-100 rounded-lg m-2">
+                <h3 class="text-lg font-bold text-purple-800 mb-2 cursor-pointer">Hardware</h3>
+                <div class="skill-content hidden">
+                    <h4 class="text-md font-bold text-purple-700">Embedded Systems</h4>
+                    <ul>
+                        <li>Internet of Things (IoT)</li>
+                        <li>SBCs (Nvidia Jetson, Raspberry Pi)</li>
+                        <li>Microcontrollers (Arduino, Raspberry Pi Pico, Teensy 4.1, ATmega328p)</li>
+                        <li>Data Protocols (SPI, I2C, UART)</li>
+                        <li>Integrated Circuits (DAC, ADC, 555 Timers)</li>
+                    </ul>
+                    <h4 class="text-md font-bold text-purple-700">Circuit Design</h4>
+                    <ul>
+                        <li>Oscilloscopes</li>
+                        <li>Function Generators</li>
+                        <li>Multimeters</li>
+                        <li>Power Supplies</li>
+                        <li>Integrated Circuits (Op Amps, etc)</li>
+                        <li>Components (BJTs, MOSFETs, RTL, capacitors)</li>
+                    </ul>
+                </div>
             </div>
+
             <!-- Artificial Intelligence -->
-            <div class="p-4 bg-pink-100 rounded-lg">
-                <h3 class="text-lg font-bold text-pink-800 mb-2">Artificial Intelligence</h3>
-                <ul>
-                    <li>Stable Diffusion (Image-Generation)</li>
-                    <li>Large Language Models</li>
-                    <li>Linear Regression</li>
-                    <li>Bayseian Classification</li>
-                    <li>Whispr (Speech to Text)</li>
-                    <li>Pika (Video Generation)</li>
-                </ul>
+            <div class="skill-category p-4 bg-pink-100 rounded-lg m-2">
+                <h3 class="text-lg font-bold text-pink-800 mb-2 cursor-pointer">Artificial Intelligence</h3>
+                <div class="skill-content hidden">
+                    <ul>
+                        <li>Stable Diffusion (Image-Generation)</li>
+                        <li>Large Language Models</li>
+                        <li>Linear Regression</li>
+                        <li>Bayesian Classification</li>
+                        <li>Whispr (Speech to Text)</li>
+                        <li>Pika (Video Generation)</li>
+                    </ul>
+                </div>
             </div>
+
             <!-- In-Progress Skills (Courses, Job Assignments, Certificates) -->
-            <div class="p-4 bg-orange-100 rounded-lg">
-                <h3 class="text-lg font-bold text-orange-800 mb-2">In-Progress Skills (Courses, Job Assignments, Certificates)</h3>
-                <ul>
-                    <li>Pytorch</li>
-                    <li>Firebase (Cloud Computing)</li>
-                    <li>Lyapunov Stability</li>
-                    <li>Integral Control</li>
-                    <li>Backstepping for Euler-Lagrange Systems and Actuator Dynamics</li>
-                    <li>Linear Quadratic Regulators</li>
-                    <li>Covolutional Neural Networks</li>
-                    <li>Kernel Methods</li>
-                </ul>
+            <div class="skill-category p-4 bg-orange-100 rounded-lg m-2">
+                <h3 class="text-lg font-bold text-orange-800 mb-2 cursor-pointer">In-Progress Skills (Courses, Job Assignments, Certificates)</h3>
+                <div class="skill-content hidden">
+                    <ul>
+                        <li>Pytorch</li>
+                        <li>Firebase (Cloud Computing)</li>
+                        <li>Lyapunov Stability</li>
+                        <li>Integral Control</li>
+                        <li>Backstepping for Euler-Lagrange Systems and Actuator Dynamics</li>
+                        <li>Linear Quadratic Regulators</li>
+                        <li>Convolutional Neural Networks</li>
+                        <li>Kernel Methods</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
