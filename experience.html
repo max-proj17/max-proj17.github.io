@@ -1,19 +1,75 @@
 <!-- Work Experience Section -->
-<section id="experience" class="bg-gray-100 py-8">
+<section id="experience" class="container mx-auto p-6 md:p-12">
     <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
-    <div class="container mx-auto">
-        <!-- Job 1 -->
-        <div class="mb-4">
-            <h3 class="text-xl font-bold">Position at Company</h3>
-            <p class="text-md">[Duration]</p>
-            <p><!-- Brief description of my role and achievements --></p>
+    <div class="flex flex-wrap">
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <!-- Slide for Holo Reality Labs -->
+            <div class="mySlides fade">
+                <img src="resources/images/holo-reality-labs.png" alt="Holo Reality Labs" style="width:100%">
+            </div>
+            <!-- Slide for University of Iowa -->
+            <div class="mySlides fade">
+                <img src="resources/images/Tracers.png" alt="University of Iowa" style="width:100%">
+            </div>
+            <!-- Slide for UChicago Medicine -->
+            <div class="mySlides fade">
+                <img src="resources/images/UChicago-Medicine.jpg" alt="UChicago Medicine" style="width:100%">
+            </div>
+
+            <!-- Slideshow navigation buttons -->
+            <button class="prev" onclick="plusSlides(-1)">❮ Prev</button>
+            <button class="next" onclick="plusSlides(1)">Next ❯</button>
+
+            <!-- Add more slides as needed -->
         </div>
-        <!-- Job 2 -->
-        <div class="mb-4">
-            <h3 class="text-xl font-bold">Position at Another Company</h3>
-            <p class="text-md">[Duration]</p>
-            <p><!-- Brief description of my role and achievements --></p>
+
+        <!-- Text Box -->
+        <div class="text-box">
+            <!-- Corresponding Text for Holo Reality Labs -->
+            <div class="text-content" id="text1">
+                <h3 class="text-xl font-bold">Holo Reality Labs</h3>
+                <p class="text-md">Engineering Researcher (09/2023) - Current</p>
+                <ul>
+                    <li>Actively developing a Unity-based eye exam application that addresses the
+                        challenges in aligning in-game measurement distances with real-life
+                        equivalents and ensuring the VR display resolution of eye exam letters
+                        accurately reflects eye prescription levels, thereby enhancing the precision and
+                        reliability of virtual reality eye assessments</li>
+                    <!-- Add more points as needed -->
+                </ul>
+            </div>
+            <!-- Corresponding Text for University of Iowa -->
+            <div class="text-content" id="text2">
+                <h3 class="text-xl font-bold">University of Iowa (TRACERS NASA Program)</h3>
+                <p class="text-md">Undergraduate Computer Engineer (02/2023) - Current</p>
+                <ul>
+                    <li>Engineered a system focused on acquiring real-time temperature
+                        control data from a Thermal Control Unit (TCU) with Ethernet Modbus TCP
+                        using the Watlow F4T Process Controller.</li>
+                        <li>Developed and currently maintaining Python software tools for teams to
+                        synchronize testing across equipment such as waveform generators and power
+                        supplies.</li>
+                        <li>Utilized MATLAB and Raspberry Pi to display ADC outputs sent via SPI</li>
+                    <!-- Add more points as needed -->
+                </ul>
+            </div>
+            <!-- Corresponding Text for UChicago Medicine -->
+            <div class="text-content" id="text3">
+                <h3 class="text-xl font-bold">University of Chicago Medicine</h3>
+                <p class="text-md">Junior Research Assistant (05/2019) - (09/2019)</p>
+                <ul>
+                    <li>Researched the reversibility of the complete denaturation (structural failure) of
+                        the Trypsin Protein with Copolymer T1107. </li>
+                        <li>Presented to Dr. Raphael C. Lee and a team of graduate-student researchers
+                        every week to provide summaries of research findings.</li>
+                        <li>Results confirm T1107's capability to refold Trypsin and research can be used for
+                        hypothetical medicines or further research.</li>
+                    <!-- Add more points as needed -->
+                </ul>
+            </div>
+            <!-- Add more text sections as needed -->
         </div>
-        <!-- Add more as needed -->
     </div>
 </section>

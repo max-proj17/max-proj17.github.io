@@ -19,7 +19,7 @@
     <div id="achievements"></div>
     <div id="footer"></div>
 
-    <!-- JavaScript to load other HTML files -->
+        <!-- JavaScript to load other HTML files -->
     <script>
         async function includeHTML() {
             const sections = ['navbar', 'about', 'experience', 'projects', 'skills', 'achievements', 'footer'];
@@ -35,12 +35,28 @@
                     console.error('Error fetching section:', error);
                 }
             }
+            
+            // Now, instead of calling setupEventListeners and setupSlideshow here,
+            // load the prop.js script and call them after it's loaded.
+            loadPropJS();
         }
-    
+
+        function loadPropJS() {
+            const script = document.createElement('script');
+            script.src = 'prop.js';
+            script.onload = () => {
+                // Call the functions after the prop.js script is loaded.
+                setupEventListeners(); // Now these functions will be defined
+                setupSlideshow();
+            };
+            document.body.appendChild(script);
+        }
+        
         includeHTML();
     </script>
 
+
     <!-- prop.js Script -->
-    <script src="prop.js"></script>
+    <!-- <script src="prop.js"></script> -->
 </body>
 </html>

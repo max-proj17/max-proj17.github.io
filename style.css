@@ -1,6 +1,16 @@
+/* Reset margins, padding and box sizing for consistent rendering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Text styles */
 .text-lg {
     margin-bottom: 16px; /* Adjust the value as needed */
 }
+
+/* Status label styles */
 .status-label {
     display: inline-block;
     padding: 0.25em 0.6em;
@@ -15,29 +25,225 @@
     margin-top: 8px;
 }
 
+/* Flex container for wrapping elements */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns flex items at the start of the cross axis */
+}
+
+/* Skill category styling */
 .skill-category {
-    flex: 1 1 200px; /* Adjust the 200px to your minimum width requirement */
+    flex: 1 1 200px; /* Grow and shrink with a base width of 200px */
     padding: 15px;
     margin: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
+/* Interaction styles for skill category titles */
 .skill-category h3 {
     cursor: pointer;
+    margin-bottom: 0; /* Remove margin bottom for alignment */
 }
 
+/* Skill content hidden by default */
 .skill-content {
-    max-height: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    max-height: 0; /* Initially collapsed */
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    display: none; /* Hide by default */
-}
-/* When 'hidden' class is removed, content should be visible */
-.skill-content:not(.hidden) {
-    display: block; /* Or 'flex', 'grid', etc., depending on your layout */
-    max-height: 1000px; /* Adjust as needed */
+    display: block; /* Display block to allow transition */
+    padding: 0 15px;
 }
 
-/* Toggle to show content */
+/* Active state for skill content */
 .skill-category.active .skill-content {
-    max-height: 1000px; /* Adjust as needed */
+    max-height: 1000px; /* Expanded state */
+}
+
+/* Show class for skill content */
+.skill-content.show {
+    max-height: 1000px; /* Expanded state */
+}
+
+/* Flex container for the main content */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between flex items */
+}
+
+/* Slideshow container flex settings */
+.slideshow-container {
+    flex: 0 0 60%; /* Flex basis of 60% */
+    position: relative;
+}
+
+/* Hide slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Fade animation for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Keyframes for fade animation */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Text box flex settings */
+.text-box {
+    flex: 0 0 40%; /* Flex basis of 40% */
+    padding-left: 20px; /* Padding inside the box */
+}
+
+/* Hide text content by default */
+.text-content {
+    display: none;
+}
+
+/* Display the first child of text content */
+.text-content:first-child {
+    display: block;
+}
+
+/* Styles for navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Positioning next button */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Positioning prev button */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Button hover styles */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+/* Ensuring full width for experience and projects */
+#experience, #projects {
+    width: 100%;
+}
+
+/* Flex settings for inner elements */
+.slideshow-container, .text-box {
+    flex: 1; /* Flexible grow and shrink */
+}
+
+
+
+/* Clearing margins and ensuring flexbox alignment */
+#experience .container, #skills .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+}
+
+/* Add padding to the experience section */
+#experience {
+    padding: 20px; /* Adjust the padding value to match your design */
+}
+/* Initially hidden project details */
+.project-details.hidden {
+    display: none;
+}
+
+/* Show class for project details */
+.project-details.show {
+    display: block;
+}
+
+body {
+    /* Existing styles */
+    background-image: url('resources/images/sears.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+#about p {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 10px; /* Space between paragraphs */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+}
+
+#experience p, 
+#experience ul, 
+#experience h2,
+#experience h3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 10px; /* Space between each element */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+}
+
+#experience ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+#projects p, 
+#projects ul, 
+#projects h2,
+#projects h3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 10px; /* Space between each element */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+}
+
+#projects ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+
+#achievements p, 
+#achievements ul, 
+#achievements h2,
+#achievements h3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 10px; /* Space between each element */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+}
+
+#achievements ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+
+#skills h2 {
+    
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 10px; /* Space between each element */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+
 }
