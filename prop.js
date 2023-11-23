@@ -1,17 +1,5 @@
 function setupEventListeners() {
-    // Event Delegation for Dropdowns
-    document.addEventListener('click', (event) => {
-        if (event.target.matches('.skill-category h3') || event.target.closest('.skill-category h3')) {
-            const skillCategory = event.target.closest('.skill-category');
-            if (skillCategory) {
-                // Toggle only the .skill-content within the same .skill-category
-                const content = skillCategory.querySelector('.skill-content');
-                if (content) {
-                    content.classList.toggle('show');
-                }
-            }
-        }
-    });
+
 
     // Smooth Scrolling for anchor tags
     document.addEventListener('click', (event) => {

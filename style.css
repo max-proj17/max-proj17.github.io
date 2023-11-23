@@ -37,33 +37,12 @@
     flex: 1 1 200px; /* Grow and shrink with a base width of 200px */
     padding: 15px;
     margin: 5px;
-    transition: all 0.3s ease;
     border: 1px solid transparent;
 }
 
-/* Interaction styles for skill category titles */
-.skill-category h3 {
-    cursor: pointer;
-    margin-bottom: 0; /* Remove margin bottom for alignment */
-}
-
-/* Skill content hidden by default */
+/* Skill content always visible */
 .skill-content {
-    transition: max-height 0.3s ease, padding 0.3s ease;
-    max-height: 0; /* Initially collapsed */
-    overflow: hidden;
-    display: block; /* Display block to allow transition */
     padding: 0 15px;
-}
-
-/* Active state for skill content */
-.skill-category.active .skill-content {
-    max-height: 1000px; /* Expanded state */
-}
-
-/* Show class for skill content */
-.skill-content.show {
-    max-height: 1000px; /* Expanded state */
 }
 
 /* Flex container for the main content */
@@ -75,6 +54,9 @@
     flex-wrap: wrap;
     gap: 20px; /* Gap between flex items */
 }
+
+/* ... (the rest of the CSS code remains unchanged) ... */
+
 
 /* Slideshow container flex settings */
 .slideshow-container {
@@ -255,4 +237,29 @@ body {
     margin-bottom: 10px; /* Space between each element */
     border-radius: 5px; /* Optional: rounds the corners of the background */
 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the images */
+    margin-bottom: 10px; /* Space between the image container and other elements */
+    border-radius: 5px; /* Optional: rounds the corners of the background */
+}
+
+
+.image-container a {
+    margin: 0 10px; /* Adjust as needed for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+}
+
+.text-link-large {
+    font-size: 1.2em; /* Adjust the font size as needed */
+    font-weight: bold; /* Makes the text bold */
 }
