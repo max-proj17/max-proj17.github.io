@@ -2,13 +2,21 @@
 <section id="projects" class="container mx-auto p-6 md:p-12">
     <h2 class="text-3xl font-bold mb-4">Projects (Click Title to View)</h2>
     <div class="flex flex-wrap">
+        
+        
         <!-- Project: 10 -->
         <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-            <img src="resources/images/transRecv.jpg" alt="Transmitter and Receiver" class="rounded shadow-lg">
-            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails1')">Transmitter and Receiver</h3>
+            <img src="resources/images/transRecv.png" alt="Transmitter and Receiver" class="rounded shadow-lg">
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails1')">Infrared Security System</h3>
             <div class="project-details hidden" id="projectDetails1">
-                <p class="mb-2"></p>
-                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress - due Nov 2023</span>
+                <p class="mb-2">The purpose of the electric eye light beam-interrupter safety system is to design, develop, and test a novel safety 
+                    system aimed at reliably detecting, and responding to, physical obstructions in a given environment. This project 
+                    addresses a critical real-world problem wherein accurate and dependable sensor data are essential for ensuring the 
+                    safety and functionality of various applications. The system consists of a transmitter, which emits a modulated infrared 
+                    (IR) beam, and a receiver, which detects interruptions in the beam via hardware filtering and triggers an alert. Through a comprehensive 
+                    exploration of design choices, experimentation, and testing, this report provides insights into the development of a 
+                    safety system that performs effectively under diverse lighting conditions, while also incorporating an SMS alert feature. </p>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Nov 2023</span>
                 <div class="flex flex-wrap">
                     <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
                         Filtering
@@ -22,85 +30,14 @@
                     <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
                         Infrared 
                     </span>
-                    <!-- Add more tags as needed -->
-                </div>
-            </div>
-        </div>
-        <!-- Project: 12 -->
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-            <img src="resources/images/jarvisimg.jpg" alt="Jarvis AI Assistant" class="rounded shadow-lg">
-            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails2')">Jarvis AI Assistant</h3>
-            <div class="project-details hidden" id="projectDetails2">
-                <p class="mb-2"></p>
-                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
-                <div class="flex flex-wrap">
                     <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
-                        Nvidia Jetson Dev Board (Orin Nano)
+                        Infineon Wifi Chip 
                     </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        Databases
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Infineon Wifi Chip 
                     </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
-                        LLM's
-                    </span>
-                    
-                    <!-- Add more tags as needed -->
-                </div>
-            </div>
-        </div>
-        <!-- Project: 11 -->
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-            <img src="resources/images/futureboom.jpg" alt="AI Music Album Generator" class="rounded shadow-lg">
-            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails3')">Generative AI Music Album Generator</h3>
-            <div class="project-details hidden" id="projectDetails3">
-                <p class="mb-2"></p>
-                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
-                <div class="flex flex-wrap">
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
-                        Whisper
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        Databases
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        C++
-                    </span>
-                    <!-- Add more tags as needed -->
-                </div>
-            </div>
-        </div>
-        <!-- Project: 12 -->
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-            <img src="resources/images/Nvidia_CUDA_Logo.jpg" alt="CUDA Accelerated CNN" class="rounded shadow-lg">
-            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails4')">CUDA Accelerated Convolutional Neural Network (CNN)</h3>
-            <div class="project-details hidden" id="projectDetails4">
-                <p class="mb-2">
-                    Currently developing a state-of-the-art Convolutional Neural Network (CNN) leveraging CUDA for accelerated computing. 
-                    This project involves creating a custom dataset class for the MNIST dataset, integrating it 
-                    with the powerful LibTorch library. The main focus is on enhancing the performance of neural 
-                    network training by utilizing the parallel computing capabilities of NVIDIA's CUDA technology. 
-                    Key features include:
-                </p>
-                <ul class="list-disc ml-4">
-                    <li>Custom MNIST dataset handling with advanced data preprocessing and normalization techniques.</li>
-                    <li>Dynamic device selection enabling training on both CPU and GPU, harnessing CUDA's power when available.</li>
-                    <li>Implementation of a sequential data loader for efficient batch processing and optimized memory usage.</li>
-                    <li>Integration with LibTorch for sophisticated model training, error handling, and performance metrics evaluation.</li>
-                </ul>
-                <p>This project is a testament to applying advanced computing techniques to solve complex problems in machine learning and artificial intelligence.</p>
-                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
-                <div class="flex flex-wrap">
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        CUDA
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        Cmake
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        C++
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-600 bg-green-200 last:mr-0 mr-1">
-                        Pytorch
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        RP2040 Microcontroller 
                     </span>
                     <!-- Add more tags as needed -->
                 </div>
@@ -420,6 +357,86 @@
                     </span>
                     <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
                         Numpy
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Project: 12 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <img src="resources/images/jarvisimg.jpg" alt="Jarvis AI Assistant" class="rounded shadow-lg">
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails2')">Jarvis AI Assistant</h3>
+            <div class="project-details hidden" id="projectDetails2">
+                <p class="mb-2"></p>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Nvidia Jetson Dev Board (Orin Nano)
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Databases
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        LLM's
+                    </span>
+                    
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Project: 11 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <img src="resources/images/futureboom.jpg" alt="AI Music Album Generator" class="rounded shadow-lg">
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails3')">Generative AI Music Album Generator</h3>
+            <div class="project-details hidden" id="projectDetails3">
+                <p class="mb-2"></p>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        Whisper
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Databases
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        C++
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Project: 12 -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <img src="resources/images/Nvidia_CUDA_Logo.jpg" alt="CUDA Accelerated CNN" class="rounded shadow-lg">
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails4')">CUDA Accelerated Convolutional Neural Network (CNN)</h3>
+            <div class="project-details hidden" id="projectDetails4">
+                <p class="mb-2">
+                    Currently developing a state-of-the-art Convolutional Neural Network (CNN) leveraging CUDA for accelerated computing. 
+                    This project involves creating a custom dataset class for the MNIST dataset, integrating it 
+                    with the powerful LibTorch library. The main focus is on enhancing the performance of neural 
+                    network training by utilizing the parallel computing capabilities of NVIDIA's CUDA technology. 
+                    Key features include:
+                </p>
+                <ul class="list-disc ml-4">
+                    <li>Custom MNIST dataset handling with advanced data preprocessing and normalization techniques.</li>
+                    <li>Dynamic device selection enabling training on both CPU and GPU, harnessing CUDA's power when available.</li>
+                    <li>Implementation of a sequential data loader for efficient batch processing and optimized memory usage.</li>
+                    <li>Integration with LibTorch for sophisticated model training, error handling, and performance metrics evaluation.</li>
+                </ul>
+                <p>This project is a testament to applying advanced computing techniques to solve complex problems in machine learning and artificial intelligence.</p>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        CUDA
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Cmake
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        C++
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-600 bg-green-200 last:mr-0 mr-1">
+                        Pytorch
                     </span>
                     <!-- Add more tags as needed -->
                 </div>
