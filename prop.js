@@ -48,18 +48,25 @@ function currentSlide(n, slideshowId) {
 
 function showSlides(n, slideshowId) {
     let slides = document.querySelectorAll(`#${slideshowId} .mySlides`);
-    let textContents = document.querySelectorAll('.text-box .text-content');
-    if (!slides.length || !textContents.length) return;
+    if (!slides.length) return;
 
     if (n > slides.length) { slideIndex[slideshowId] = 1; }
     if (n < 1) { slideIndex[slideshowId] = slides.length; }
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        textContents[i].style.display = "none"; // Hide all text contents
-    }
+    // Hide all slides
+    slides.forEach(slide => slide.style.display = "none");
+
+    // Show the current slide
     slides[slideIndex[slideshowId] - 1].style.display = "block";
-    textContents[slideIndex[slideshowId] - 1].style.display = "block"; // Display the corresponding text content
+
+    // If the current slideshow is 'experienceSlideshow', then handle the text content
+    if (slideshowId === 'experienceSlideshow') {
+        let textContents = document.querySelectorAll('.text-box .text-content');
+        textContents.forEach(content => content.style.display = "none");
+        if (textContents[slideIndex[slideshowId] - 1]) {
+            textContents[slideIndex[slideshowId] - 1].style.display = "block";
+        }
+    }
 }
 
 function toggleProjectDetails(event, detailsId) {
