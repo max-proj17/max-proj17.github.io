@@ -21,58 +21,50 @@ function setupEventListeners() {
 
 }
 
-let slideIndex = 1;
-function setupSlideshow() {
-    showSlides(slideIndex);
-
-    // Add click event listeners to the slideshow images
-    const slides = document.querySelectorAll(".mySlides");
-    slides.forEach((slide, index) => {
-        slide.addEventListener('click', () => {
-            currentSlide(index + 1);
-        });
-    });
-}
-
-function currentSlide(n) {
-    showSlides(n);
-}
-
-function showSlides(n) {
-    let i;
-    const slides = document.querySelectorAll(".mySlides");
-    const textContents = document.querySelectorAll(".text-content");
-
-    // Check if the slides or textContents are not found
-    if (!slides.length || !textContents.length) {
-        console.error("Slides or text contents not found.");
-        return; // Exit the function if no slides or text contents
+// Dynamic initialization of slideIndex based on the number of slideshow containers
+let slideIndex = {};
+document.querySelectorAll('.slideshow-container').forEach((container, index) => {
+    let id = container.id;
+    if (!id) {
+        id = `slideshow${index + 1}`;
+        container.id = id;
     }
+    slideIndex[id] = 1;
+    showSlides(1, id); // Initialize the slideshow for this container
+});
 
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
 
-    // Hide all slides and text contents
-    for (i = 0; i < slides.length; i++) {
+function setupSlideshow(slideshowId) {
+    showSlides(slideIndex[slideshowId], slideshowId);
+}
+
+function plusSlides(n, slideshowId) {
+    showSlides(slideIndex[slideshowId] += n, slideshowId);
+}
+
+function currentSlide(n, slideshowId) {
+    showSlides(n, slideshowId);
+}
+
+function showSlides(n, slideshowId) {
+    let slides = document.querySelectorAll(`#${slideshowId} .mySlides`);
+    let textContents = document.querySelectorAll('.text-box .text-content');
+    if (!slides.length || !textContents.length) return;
+
+    if (n > slides.length) { slideIndex[slideshowId] = 1; }
+    if (n < 1) { slideIndex[slideshowId] = slides.length; }
+
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        textContents[i].style.display = "none";
+        textContents[i].style.display = "none"; // Hide all text contents
     }
-
-    // Display the current slide and its corresponding text content
-    slides[slideIndex - 1].style.display = "block";
-    textContents[slideIndex - 1].style.display = "block";
+    slides[slideIndex[slideshowId] - 1].style.display = "block";
+    textContents[slideIndex[slideshowId] - 1].style.display = "block"; // Display the corresponding text content
 }
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
 function toggleProjectDetails(event, detailsId) {
-    // Prevent the event from affecting parent elements
     event.stopPropagation();
-
-    // Select the details container using the passed ID
-    var details = document.getElementById(detailsId);
-    // Toggle the 'hidden' class to show/hide the details
+    const details = document.getElementById(detailsId);
     details.classList.toggle('hidden');
 }
 

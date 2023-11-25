@@ -3,7 +3,7 @@
     <h2 class="text-3xl font-bold mb-4">Work Experience</h2>
     <div class="flex flex-wrap">
         <!-- Slideshow Container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="experienceSlideshow">
             <!-- Slides -->
             <!-- Slide for Holo Reality Labs -->
             <div class="mySlides fade">
@@ -19,8 +19,8 @@
             </div>
 
             <!-- Slideshow navigation buttons -->
-            <button class="prev" onclick="plusSlides(-1)">❮ Prev</button>
-            <button class="next" onclick="plusSlides(1)">Next ❯</button>
+            <button class="prev" onclick="plusSlides(-1, 'experienceSlideshow')">❮</button>
+            <button class="next" onclick="plusSlides(1, 'experienceSlideshow')"> ❯</button>
 
             <!-- Add more slides as needed -->
         </div>

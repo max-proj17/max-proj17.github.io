@@ -64,10 +64,20 @@
     position: relative;
 }
 
+
 /* Hide slides by default */
 .mySlides {
     display: none;
+    width: 100%; /* Ensure full width */
 }
+/* Ensure images and videos within slides are fully responsive */
+.slideshow-container img,
+.slideshow-container video {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This removes any extra space below the image */
+}
+
 
 /* Fade animation for slides */
 .fade {
