@@ -2,7 +2,78 @@
 <section id="projects" class="container mx-auto p-6 md:p-12">
     <h2 class="text-3xl font-bold mb-4">Projects (Click Title to View)</h2>
     <div class="flex flex-wrap">
-        
+        <!-- Project: 11 -->
+        <!-- Project: Generative AI Music Album Generator -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <!-- Slideshow Container for the Project -->
+            <div class="slideshow-container" id="projectGenerativeMusic">
+                <!-- Slides (Images) -->
+                <div class="mySlides fade">
+                    <img src="resources/images/Baba-Jamz-Slides/Baba-Full.png" alt="Generative AI Music Album Cover" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources/images/Baba-Jamz-Slides/Baba-App-2.PNG" alt="Generative AI Music App Interface" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources/images/Baba-Jamz-Slides/album-cover-1702346823115.png" alt="Generative AI Full Music Album Layout" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources/images/Baba-Jamz-Slides/Baba-GIF.gif" alt="Generative AI Music Album Animated GIF" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources/images/Baba-Jamz-Slides/Baba-Logo.png" alt="Generative AI Music Album Logo" style="width:100%">
+                </div>
+                <!-- Add more slides as needed -->
+                
+                <!-- Slideshow navigation buttons -->
+                <button class="prev" onclick="plusSlides(-1, 'projectGenerativeMusic')">❮</button>
+                <button class="next" onclick="plusSlides(1, 'projectGenerativeMusic')">❯</button>
+            </div>
+            <!-- The rest of the project content goes here -->
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetailsGenerativeMusic')">Baba Jamz v1 - AI Music Generation and Visualization</h3>
+            <div class="project-details hidden" id="projectDetailsGenerativeMusic">
+                <p class="mb-2">A cutting-edge music generation and visualization platform, created by Maximelio Finch and Sirena Backham, leveraging AI and web technologies to craft a novel musical experience. The project features a server-side API for music generation and a client-side application for dynamic 3D visualization.</p>
+                <ul class="list-disc ml-4">
+                    <li>Developed a Node.js backend with Express for robust server-side scripting and API processing.</li>
+                    <li>Integrated OpenAI & Replicate for AI-driven music creation, enhanced by FFmpeg for media processing.</li>
+                    <li>Built a reactive client-side UI using React and animated 3D graphics with Three.js for music visualization.</li>
+                    <li>Utilized Vite for efficient project building and included tools like eslint for code quality assurance.</li>
+                    <li>Incorporated AI models for content generation, enabling users to create music and album covers from prompts.</li>
+                </ul>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - December 2023</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Node.js
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Express
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        OpenAI-ChatGPT
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        Replicate
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
+                        FFmpeg
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        React
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Three.js
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Vite
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        ClipDrop API
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+            
+        </div>
         <!-- Project: 10 -->
         <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
             
@@ -142,10 +213,10 @@
             <div class="slideshow-container" id="project3">
                 <!-- Slides (Images and Videos) -->
                 <div class="mySlides fade">
-                    <img src="resources\images\dub-slides\img1.jpg" alt="Maximelio Finch and team members Sam Witte, Sirena Backham winning UIowa's 2023 Hackathon" style="width:100%">
+                    <img src="resources\images\dub-slides\img2.png" alt="Dubious Studio Logo" style="width:100%">
                 </div>
                 <div class="mySlides fade">
-                    <img src="resources\images\dub-slides\img2.png" alt="Dubious Studio Logo" style="width:100%">
+                    <img src="resources\images\dub-slides\img1.jpg" alt="Maximelio Finch and team members Sam Witte, Sirena Backham winning UIowa's 2023 Hackathon" style="width:100%">
                 </div>
                 <div class="mySlides fade">
                     <img src="resources\images\dub-slides\img3.jpg" alt="UIowa Hackathon Winner Medal" style="width:100%">
@@ -559,27 +630,8 @@
                 </div>
             </div>
         </div>
-        <!-- Project: 11 -->
-        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-            <img src="resources/images/futureboom.jpg" alt="AI Music Album Generator" class="rounded shadow-lg">
-            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails3')">Generative AI Music Album Generator</h3>
-            <div class="project-details hidden" id="projectDetails3">
-                <p class="mb-2"></p>
-                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
-                <div class="flex flex-wrap">
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
-                        Whisper
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        Databases
-                    </span>
-                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
-                        C++
-                    </span>
-                    <!-- Add more tags as needed -->
-                </div>
-            </div>
-        </div>
+        
+
         <!-- Project: 12 -->
         <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
             <img src="resources/images/Nvidia_CUDA_Logo.jpg" alt="CUDA Accelerated CNN" class="rounded shadow-lg">
