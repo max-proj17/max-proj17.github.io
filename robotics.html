@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Projects - Maximelio Finch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navbar Start -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold">Maximelio Finch - Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html#about" class="text-white">About Me</a></li>
+                <li><a href="index.html#experience" class="text-white">Work Experience</a></li>
+                <li class="relative">
+                    <a href="#" class="text-white dropdown-btn">Projects</a>
+                    <div class="dropdown-content hidden absolute left-0 text-white mt-1 shadow-md">
+                        <a href="robotics.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Robotics</a>
+                        <a href="artificial-intelligence.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Artificial Intelligence</a>
+                        <a href="embedded-systems.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Embedded Systems</a>
+                        <a href="software-design.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Software Design</a>
+                    </div>
+                </li>
+                <li><a href="index.html#achievements" class="text-white">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
+
+<section id="robotics-projects" class="container mx-auto p-6 md:p-12">
+    <h2 class="text-3xl font-bold mb-4">Robotics Projects</h2>
+    <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <img src="resources/images/Nvidia_CUDA_Logo.jpg" alt="CUDA Accelerated NeRF" class="rounded shadow-lg">
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails4')">Custom Neural Radiance Fields (NeRFs) Implementation for 3D Reconstruction</h3>
+            <div class="project-details hidden" id="projectDetails4">
+                <p class="mb-2">
+                    I am in the process of developing a Neural Radiance Fields (NeRF) model from the ground up, inspired by the pivotal paper on NeRF available at <a href="https://arxiv.org/abs/2003.08934" target="_blank">arxiv.org/abs/2003.08934</a>. This project is driven by my passion for cutting-edge technologies in robotics and 3D reconstruction, leveraging CUDA for accelerated computing to significantly enhance the model's performance. The objective is to create highly detailed and photorealistic 3D models from a set of 2D images, a capability critical for robotic vision and navigation systems.
+                   
+                </p>
+                <p class="mb-2">
+                    The implementation involves:
+                </p>
+                <ul class="list-disc ml-4">
+                    <li>Designing a custom dataset loader for efficiently handling and preprocessing input images.</li>
+                    <li>Utilizing CUDA for parallel computation, enabling rapid processing of large datasets.</li>
+                    <li>Applying advanced machine learning techniques, including positional encoding and ray tracing algorithms, to capture the intricate details of 3D scenes.</li>
+                    <li>Integration with PyTorch for dynamic computational graph generation and backpropagation.</li>
+                </ul>
+                
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        CUDA
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        PyTorch
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        3D Reconstruction
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-600 bg-green-200 last:mr-0 mr-1">
+                        Robotics
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>  
+        <!-- Project with Slideshow Example -->
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <div class="slideshow-container" id="project4">
+                <!-- Slides (Images and Videos) -->
+                <div class="mySlides fade">
+                    <img src="resources\images\Robotics-Uiowa\img1.jpg" alt="UIowa Robotics Rover" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources\images\Robotics-Uiowa\img2.jpg" alt="Isaac ROS2" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources\images\Robotics-Uiowa\img3.png" alt="Jetson Xavier NX" style="width:100%">
+                </div> 
+                <div class="mySlides fade">
+                    <img src="resources\images\Robotics-Uiowa\img4.png" alt="Intel Realsense D435i" style="width:100%">
+                </div>       
+                                                
+                <!-- Slideshow navigation buttons -->
+                <button class="prev" onclick="plusSlides(-1, 'project4')">❮ </button>
+                <button class="next" onclick="plusSlides(1, 'project4')"> ❯</button>
+            </div>
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails7')">Robotics Club - Depth Mapping and SLAM Point Cloud Extraction for Rover Autonomy</h3>
+            <div class="project-details hidden" id="projectDetails7">
+                <ul class="list-disc ml-4">
+                    <li>Employed the Intel RealSense SDK and OpenCV in Python to configure a 
+                    Nvidia Jetson Xavier NX for real-time depth and color frame streaming from an Intel RealSense 
+                    D435i camera. Advanced image processing converted frames to numpy arrays and applied color 
+                    maps to depth images for side-by-side display,demonstrating proficiency in depth mapping.</li>
+
+                    <li>Isaac ROS SLAM (Simultaneous Localization and Mapping) nodes for point cloud extraction and rosbag recording. This process 
+                        was visualized in RViz. The point cloud map produced was instrumental for autonomous 
+                        navigation, facilitating future integration with Nav2. Key Robotics Club milestone.</li>
+                </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - Sept 2023</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Nvidia Jetson (Xavier NX)
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Python
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        ROS 2 (Humble)
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Docker
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Linux (Debian)
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Intel Realsense SDK
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Computer Vision
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Image Processing
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        SLAM
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Data Visualization
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            <div class="slideshow-container" id="project5">
+                <!-- Slides (Images and Videos) -->
+                <div class="mySlides fade">
+                    <img src="resources\images\RCSound-Slides\img1.jpg" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources\images\RCSound-Slides\img2.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Schematic" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="resources\images\RCSound-Slides\img3.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Audio Circuit" style="width:100%">
+                </div> 
+                <div class="mySlides fade">
+                    <img src="resources\images\RCSound-Slides\img4.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Motor Control Code" style="width:100%">
+                </div>       
+                                                
+                <!-- Slideshow navigation buttons -->
+                <button class="prev" onclick="plusSlides(-1, 'project5')">❮ </button>
+                <button class="next" onclick="plusSlides(1, 'project5')"> ❯</button>
+            </div>
+            <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails8')">Joystick Controlled Audio Feedback Car - Team Project</h3>
+            <div class="project-details hidden" id="projectDetails8">
+                <ul class="list-disc ml-4">
+                    <li>Implemented C-code to turn inputs from two joysticks translated by
+                    ADCs into PWM output values for a motor driver that controls 12V
+                    motors. Processed all input values into a pseudo normal distribution to
+                    create smooth speed transitions.
+                    </li>
+                    <li>Constructed an audio circuit with project partner, utilizing a 555 Timer
+                        Voltage Controlled Oscillator, DAC (with I2C), interrupts, amplifier, and
+                        speaker, to turn distance measurements from an ultrasonic sensor into
+                        audible sound.</li>
+                </ul>
+                <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - April 2023</span>
+                <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        C
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Interrupts
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Embedded Systems
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Mechatronics
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
+                        Statistics
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        I2C
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                        Operational Amplifiers (Opamps)
+                    </span>
+                    <!-- Add more tags as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="prop.js"></script>
+    <!-- Footer -->
+</body>
+</html>

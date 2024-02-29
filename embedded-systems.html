@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Projects - Maximelio Finch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navbar Start -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold">Maximelio Finch - Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html#about" class="text-white">About Me</a></li>
+                <li><a href="index.html#experience" class="text-white">Work Experience</a></li>
+                <li class="relative">
+                    <a href="#" class="text-white dropdown-btn">Projects</a>
+                    <div class="dropdown-content hidden absolute left-0 text-white mt-1 shadow-md">
+                        <a href="robotics.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Robotics</a>
+                        <a href="artificial-intelligence.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Artificial Intelligence</a>
+                        <a href="embedded-systems.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Embedded Systems</a>
+                        <a href="software-design.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Software Design</a>
+                    </div>
+                </li>
+    
+                <li><a href="index.html#achievements" class="text-white">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Artificial Intelligence Projects Section -->
+    <section id="emd-projects" class="container mx-auto p-6 md:p-12">
+        <h2 class="text-3xl font-bold mb-4">Embedded Systems Projects</h2>
+        <div class="flex flex-wrap">
+            <!-- Project 1 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <img src="resources/images/LLMProj.PNG" alt="LLM-Smart-Watch" class="rounded shadow-lg">
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails2')">LLM-Smart-Watch</h3>
+                <div class="project-details hidden" id="projectDetails2">
+                    <ul class="list-disc ml-4">
+                        <li>Developing an LLM-Smart-Watch, a wearable device integrating AI capabilities through ChatGPT.</li>
+                        <li>Utilizes an ESP32 microcontroller and C++ programming language to enable real-time interaction with AI services, transforming user engagement with technology.</li>
+                        <li>Built with FreeRTOS to handle parallel processes and Firebase to store user photos</li>
+                    </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            ESP32
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            C++
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                            LLM's
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Embedded Systems
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Real-Time-Operating-System (RTOS)
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            PCB Design
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            FireBase Cloud Database
+                        </span>
+                        
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+            
+                <!-- Slideshow Container for the Project -->
+                <div class="slideshow-container" id="project1">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img2.jpg" alt="Image of a Raspberry Pi Pico Reciever Circuit" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <video style="width:100%" controls>
+                            <source src="resources/images/ISS-Slideshow/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img1.png" alt="555 Timer based Transmitter" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img3.png" alt="Electronics Workbench" style="width:100%">
+                    </div>               
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img4.png" alt="reciever circuit diagram" style="width:100%">
+                    </div>   
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img5.png" alt="reciever circuit diagram" style="width:100%">
+                    </div>   
+                    <div class="mySlides fade">
+                        <img src="resources/images/ISS-Slideshow/img6.png" alt="Twilio Security Message" style="width:100%">
+                    </div>   
+                                                 
+                    <!-- Add more slides as needed -->
+            
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project1')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project1')"> ❯</button>
+                </div>
+                <!-- The rest of the project content goes here -->
+                
+                
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails1')">Infrared Security System</h3>
+                <div class="project-details hidden" id="projectDetails1">
+                    <p class="mb-2">The purpose of the electric eye light beam-interrupter safety system is to design, develop, and test a novel safety 
+                        system aimed at reliably detecting, and responding to, physical obstructions in a given environment. This project 
+                        addresses a critical real-world problem wherein accurate and dependable sensor data are essential for ensuring the 
+                        safety and functionality of various applications. The system consists of a transmitter, which emits a modulated infrared 
+                        (IR) beam, and a receiver, which detects interruptions in the beam via hardware filtering and triggers an alert. Through a comprehensive 
+                        exploration of design choices, experimentation, and testing, this report provides insights into the development of a 
+                        safety system that performs effectively under diverse lighting conditions, while also incorporating an SMS alert feature. </p>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Nov 2023</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Filtering
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Operational Amplifiers (Opamps)
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Remote Control
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Infrared 
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Infineon Wifi Chip 
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Infineon Wifi Chip 
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            RP2040 Microcontroller 
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <!-- Slideshow Container for the Project -->
+                <div class="slideshow-container" id="project2">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources\images\IOTTherm\img1.jpg" alt="Image of a Raspberry Pi Pico Reciever Circuit" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\IOTTherm\img2.jpg" alt="DS18x20 Temperature Sensor" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\IOTTherm\img3.png" alt="Twilio Temperature Messages" style="width:100%">
+                    </div>               
+                                                 
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project2')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project2')"> ❯</button>
+                </div>
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails5')">Web-Connected Thermometer</h3>
+                <div class="project-details hidden" id="projectDetails5">
+                    <p class="mb-2">Developed a sophisticated temperature monitoring system, integrating real-time data visualization 
+                        and user-friendly interaction. Utilized Raspberry Pi Pico (Pico W), 
+                        enhanced with custom drivers developed specifically for the high-resolution Pimoroni Display (PIM543), 
+                        ensuring seamless hardware-software integration. Implemented IoT connectivity with MQTT-Node.js server for remote data access. 
+                        The frontend boasted an intuitive UI, showcasing temperature trends and analytics. </p>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - Oct 2023</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Raspberry Pi
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            IoT
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Embedded Systems
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            React
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Node.js
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            MicroPython
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            JavaScript
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            MQTT
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <div class="slideshow-container" id="project5">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources\images\RCSound-Slides\img1.jpg" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\RCSound-Slides\img2.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Schematic" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\RCSound-Slides\img3.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Audio Circuit" style="width:100%">
+                    </div> 
+                    <div class="mySlides fade">
+                        <img src="resources\images\RCSound-Slides\img4.png" alt="Maximelio Finch and Tiger Slowinski RC Sound Feedback Car Motor Control Code" style="width:100%">
+                    </div>       
+                                                    
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project5')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project5')"> ❯</button>
+                </div>
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails8')">Joystick Controlled Audio Feedback Car - Team Project</h3>
+                <div class="project-details hidden" id="projectDetails8">
+                    <ul class="list-disc ml-4">
+                        <li>Implemented C-code to turn inputs from two joysticks translated by
+                        ADCs into PWM output values for a motor driver that controls 12V
+                        motors. Processed all input values into a pseudo normal distribution to
+                        create smooth speed transitions.
+                        </li>
+                        <li>Constructed an audio circuit with project partner, utilizing a 555 Timer
+                            Voltage Controlled Oscillator, DAC (with I2C), interrupts, amplifier, and
+                            speaker, to turn distance measurements from an ultrasonic sensor into
+                            audible sound.</li>
+                    </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - April 2023</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            C
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Interrupts
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Embedded Systems
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Mechatronics
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
+                            Statistics
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            I2C
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
+                            Operational Amplifiers (Opamps)
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- More projects can be added here -->
+        </div>
+    </section>
+
+    <script src="prop.js"></script>
+    <!-- Footer -->
+</body>
+</html>

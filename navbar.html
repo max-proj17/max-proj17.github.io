@@ -1,13 +1,24 @@
 <!-- Navbar -->
+<!-- Navbar -->
+<!-- Navbar -->
 <nav class="bg-gray-800 p-4">
     <div class="container mx-auto flex justify-between items-center">
         <a href="#" class="text-white text-2xl font-bold">Maximelio Finch - Portfolio</a>
         <ul class="flex space-x-4">
-            <li><a href="#about" class="text-white">About Me</a></li>
-            <li><a href="#experience" class="text-white">Work Experience</a></li>
-            <li><a href="#projects" class="text-white">Projects</a></li>
-            <li><a href="#skills" class="text-white">Skills</a></li>
-            <li><a href="#achievements" class="text-white">Achievements</a></li>
+            <li><a href="index.html#about" class="text-white">About Me</a></li>
+            <li><a href="index.html#experience" class="text-white">Work Experience</a></li>
+            <!-- Projects Dropdown -->
+            <li class="relative">
+                <a href="#" class="text-white dropdown-btn">Projects</a>
+                <!-- Adjusted Dropdown Content -->
+                <div class="dropdown-content hidden absolute left-0 text-white mt-1 shadow-md">
+                    <a href="robotics.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Robotics</a>
+                    <a href="artificial-intelligence.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Artificial Intelligence</a>
+                    <a href="embedded-systems.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Embedded Systems</a>
+                    <a href="software-design.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Software Design</a>
+                </div>
+            </li>
+            <li><a href="index.html#achievements" class="text-white">Achievements</a></li>
         </ul>
     </div>
 </nav>

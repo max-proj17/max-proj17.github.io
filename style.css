@@ -203,19 +203,54 @@ body {
 #experience ul {
     list-style-position: inside; /* Ensures list markers are inside the background */
 }
-#projects p, 
-#projects ul, 
-#projects h2,
-#projects h3 {
+#robotics-projects p, 
+#robotics-projects ul, 
+#robotics-projects h2,
+#robotics-projects h3 {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 10px; /* Add padding around the text */
     margin-bottom: 10px; /* Space between each element */
     border-radius: 5px; /* Optional: rounds the corners of the background */
 }
 
-#projects ul {
+#robotics-projects ul {
     list-style-position: inside; /* Ensures list markers are inside the background */
 }
+#robotics-projects h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 20px; /* Space below the heading */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+
+#ai-projects ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+#ai-projects h2, #ai-projects ul,#ai-projects p,#ai-projects h3{
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 20px; /* Space below the heading */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+#emd-projects ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+#emd-projects h2, #emd-projects ul,#emd-projects p,#emd-projects h3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 20px; /* Space below the heading */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+#soft-projects ul {
+    list-style-position: inside; /* Ensures list markers are inside the background */
+}
+#soft-projects h2, #soft-projects ul,#soft-projects p,#soft-projects h3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    margin-bottom: 20px; /* Space below the heading */
+    border-radius: 5px; /* Rounds the corners of the background */
+}
+
 
 #achievements p, 
 #achievements ul, 
@@ -273,3 +308,29 @@ body {
     font-size: 1.2em; /* Adjust the font size as needed */
     font-weight: bold; /* Makes the text bold */
 }
+
+/* Dropdown Button Style */
+.dropdown-btn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    background-color: #1F2937;
+    margin-bottom: 5px;
+}
+
+/* Dropdown Content (Initially Hidden) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1F2937;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show the dropdown content */
+.show {display: block;}
+

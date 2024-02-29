@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design Projects - Maximelio Finch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navbar Start -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold">Maximelio Finch - Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html#about" class="text-white">About Me</a></li>
+                <li><a href="index.html#experience" class="text-white">Work Experience</a></li>
+                <li class="relative">
+                    <a href="#" class="text-white dropdown-btn">Projects</a>
+                    <div class="dropdown-content hidden absolute left-0 text-white mt-1 shadow-md">
+                        <a href="robotics.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Robotics</a>
+                        <a href="artificial-intelligence.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Artificial Intelligence</a>
+                        <a href="embedded-systems.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Embedded Systems</a>
+                        <a href="software-design.html" class="block bg-gray-800 px-4 py-2 hover:bg-gray-700">Software Design</a>
+                    </div>
+                </li>
+           
+                <li><a href="index.html#achievements" class="text-white">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Artificial Intelligence Projects Section -->
+    <section id="soft-projects" class="container mx-auto p-6 md:p-12">
+        <h2 class="text-3xl font-bold mb-4">Software Design Projects</h2>
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <!-- Slideshow Container for the Project -->
+                <div class="slideshow-container" id="projectGenerativeMusic">
+                    <!-- Slides (Images) -->
+                    <div class="mySlides fade">
+                        <img src="resources/images/Baba-Jamz-Slides/Baba-Full.png" alt="Generative AI Music Album Cover" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/Baba-Jamz-Slides/Baba-App-2.PNG" alt="Generative AI Music App Interface" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/Baba-Jamz-Slides/album-cover-1702346823115.png" alt="Generative AI Full Music Album Layout" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/Baba-Jamz-Slides/Baba-GIF.gif" alt="Generative AI Music Album Animated GIF" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/Baba-Jamz-Slides/Baba-Logo.png" alt="Generative AI Music Album Logo" style="width:100%">
+                    </div>
+                    <!-- Add more slides as needed -->
+                    
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'projectGenerativeMusic')">❮</button>
+                    <button class="next" onclick="plusSlides(1, 'projectGenerativeMusic')">❯</button>
+                </div>
+                <!-- The rest of the project content goes here -->
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetailsGenerativeMusic')">Baba Jamz v1 - AI Music Generation and Visualization</h3>
+                <div class="project-details hidden" id="projectDetailsGenerativeMusic">
+                    <p class="mb-2">A cutting-edge music generation and visualization platform, created by Maximelio Finch and Sirena Backham, leveraging AI and web technologies to craft a novel musical experience. The project features a server-side API for music generation and a client-side application for dynamic 3D visualization.</p>
+                    <ul class="list-disc ml-4">
+                        <li>Developed a Node.js backend with Express for robust server-side scripting and API processing.</li>
+                        <li>Integrated OpenAI & Replicate for AI-driven music creation, enhanced by FFmpeg for media processing.</li>
+                        <li>Built a reactive client-side UI using React and animated 3D graphics with Three.js for music visualization.</li>
+                        <li>Utilized Vite for efficient project building and included tools like eslint for code quality assurance.</li>
+                        <li>Incorporated AI models for content generation, enabling users to create music and album covers from prompts.</li>
+                    </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - December 2023</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Node.js
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Express
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                            OpenAI-ChatGPT
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                            Replicate
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
+                            FFmpeg
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            React
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Three.js
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Vite
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            ClipDrop API
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <!-- Slideshow Container for the Project -->
+                <div class="slideshow-container" id="project3">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img2.png" alt="Dubious Studio Logo" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img1.jpg" alt="Maximelio Finch and team members Sam Witte, Sirena Backham winning UIowa's 2023 Hackathon" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img3.jpg" alt="UIowa Hackathon Winner Medal" style="width:100%">
+                    </div> 
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img4.jpg" alt="Dubious Studio Software Application" style="width:100%">
+                    </div>       
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img5.jpg" alt="Dubious Studio Sketch to Image Feature Before" style="width:100%">
+                    </div>            
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img6.jpg" alt="Dubious Studio Sketch to Image Feature After" style="width:100%">
+                    </div>  
+                    <div class="mySlides fade">
+                        <img src="resources\images\dub-slides\img7.jpg" alt="Dubious Studio Tensorflow Style Transfer" style="width:100%">
+                    </div>  
+      
+                                                    
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project3')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project3')"> ❯ </button>
+                </div>
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails6')">2023 UIowa Hackathon (UI Hydroinformatics) - Dubious Studio - 3rd place team win</h3>
+                <div class="project-details hidden" id="projectDetails6">
+                    <p class="mb-2">Developed an AI-assistive drawing application designed to enhance artists'
+                        workflows, facilitate art learning, and accelerate art production
+                    </p>
+                    <ul class="list-disc ml-4">
+                        <li> Integrated a Style Transfer TensorFlow model and Stable Diffusion (SD) models
+                        as widgets, with processing managed by CLIP Drop’s SD API></li>
+                        <li> Crafted and refined the drawing canvas, incorporating industry-standard
+                        controls for enhanced user interaction</li>
+                        <li>Engineered the program for multithreading, ensuring each AI widget operates
+                        on a separate thread for optimal performance.</li>
+                        <li>Actively working on the development of a DALLE2 plugin for advanced spot correction</li>
+                    </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - Sept 2023</span>
+                    <div class="flex flex-wrap">
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Python
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        LLM's
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        TensorFlow
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-red-600 bg-red-200 last:mr-0 mr-1">
+                        Stable Diffusion Models
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        multithreading
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Qt
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        File Management
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        Software Design
+                    </span>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                        GUI Design
+                    </span>
+                    <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- Project 1 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <div class="slideshow-container" id="project7">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources\images\coqui-slides\image11.png" alt="" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <video style="width:100%" controls>
+                            <source src="resources/images/coqui-slides/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources\images\coqui-slides\img1.png" alt="Maximelio Finch Fighting Game Image 1" style="width:100%">
+                    </div>           
+                    <div class="mySlides fade">
+                        <img src="resources\images\coqui-slides\img2.png" alt="Maximelio Finch Fighting Game Image 2" style="width:100%">
+                    </div> 
+                    <div class="mySlides fade">
+                        <img src="resources\images\coqui-slides\img3.png" alt="Maximelio Finch Fighting Game Image 3" style="width:100%">
+                    </div> 
+                    <div class="mySlides fade">
+                        <img src="resources\images\coqui-slides\img4.png" alt="Maximelio Finch Fighting Game Image 4" style="width:100%">
+                    </div>                     
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project7')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project7')"> ❯</button>
+                </div>
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails10')">Javascript Fighting Game</h3>
+                <div class="project-details hidden" id="projectDetails10">
+                    <ul class="list-disc ml-4">
+                        <li>Created with HTML5 utilizing the canvas element and JavaScript.</li>
+                        <li>Illustrated all original sprite sheets and background seen in game.</li> 
+                        <li>Implemented simple physics</li>
+                        for fighter sprites.
+                    </ul>
+                    <p>Use (W,A,S,D, space) for player 1 and Arrowkeys for player 2</p>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - Nov 2022</span>
+                    <a href="https://coqui-fighting-game.netlify.app/" target="_blank" class="inline-block mt-2 py-2 px-4 text-sm font-bold leading-none text-white rounded bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring">
+                        Try the Game
+                    </a>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            HTML5
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Javascript
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Data Structures
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Object Oriented Programming (OOP)
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-yellow-600 bg-yellow-200 last:mr-0 mr-1">
+                            Sprite Sheet Creation
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
+                <img src="resources/images/wordgamelobby.png" alt="Multiplayer Word Game" class="rounded shadow-lg">
+                <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails11')">Multiplayer Word Game - Semester Team Project</h3>
+                <div class="project-details hidden" id="projectDetails11">
+                    <ul class="list-disc ml-4">
+                        <li>Created a multithreaded network infrastructure for one-on-one and tournament
+                        modes.</li>
+                        <li>Implemented a JavaFX GUI and Junit testing. Set up a PostgreSQL database for
+                        high scores with 4 team members.</li>
+                    </ul>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Completed - Nov 2022</span>
+                    <div class="flex flex-wrap">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Java
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            TCP/IP Protocols
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Multithreading
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Software Design
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Anonymous classes
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            Databases
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            JavaFX
+                        </span>
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-blue-600 bg-blue-200 last:mr-0 mr-1">
+                            GUI Design
+                        </span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- More projects can be added here -->
+        </div>
+    </section>
+
+    <script src="prop.js"></script>
+    <!-- Footer -->
+</body>
+</html>
