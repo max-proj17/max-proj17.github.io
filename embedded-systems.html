@@ -37,15 +37,32 @@
         <div class="flex flex-wrap">
             <!-- Project 1 -->
             <div class="w-full md:w-1/2 lg:w-1/3 p-4 project-container">
-                <img src="resources/images/LLMProj.PNG" alt="LLM-Smart-Watch" class="rounded shadow-lg">
+                <div class="slideshow-container" id="project6">
+                    <!-- Slides (Images and Videos) -->
+                    <div class="mySlides fade">
+                        <img src="resources/images/sd-slides/llm_watch_img_1.jpg" alt="Image of a Raspberry Pi Pico Reciever Circuit" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/sd-slides/llm_watch_img_2.jpg" alt="555 Timer based Transmitter" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="resources/images/sd-slides/LLMProj.png" alt="Electronics Workbench" style="width:100%">
+                    </div>               
+                          
+                    <!-- Add more slides as needed -->
+            
+                    <!-- Slideshow navigation buttons -->
+                    <button class="prev" onclick="plusSlides(-1, 'project6')">❮ </button>
+                    <button class="next" onclick="plusSlides(1, 'project6')"> ❯</button>
+                </div>
                 <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails2')">LLM-Smart-Watch</h3>
                 <div class="project-details hidden" id="projectDetails2">
                     <ul class="list-disc ml-4">
-                        <li>Developing an LLM-Smart-Watch, a wearable device integrating AI capabilities through ChatGPT.</li>
+                        <li>Developed an LLM-Smart-Watch, a wearable device integrating AI capabilities through ChatGPT.</li>
                         <li>Utilizes an ESP32 microcontroller and C++ programming language to enable real-time interaction with AI services, transforming user engagement with technology.</li>
-                        <li>Built with FreeRTOS to handle parallel processes and Firebase to store user photos</li>
+                        <li>Built with FreeRTOS to handle parallel processes, Firebase to store user photos, and SPI to communicate with the display.</li>
                     </ul>
-                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-yellow-500 mt-2">In-Progress</span>
+                    <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">May 2024</span>
                     <div class="flex flex-wrap">
                         <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
                             ESP32
@@ -114,13 +131,10 @@
                 
                 <h3 class="text-xl font-bold mt-2 cursor-pointer" onclick="toggleProjectDetails(event, 'projectDetails1')">Infrared Security System</h3>
                 <div class="project-details hidden" id="projectDetails1">
-                    <p class="mb-2">The purpose of the electric eye light beam-interrupter safety system is to design, develop, and test a novel safety 
-                        system aimed at reliably detecting, and responding to, physical obstructions in a given environment. This project 
-                        addresses a critical real-world problem wherein accurate and dependable sensor data are essential for ensuring the 
-                        safety and functionality of various applications. The system consists of a transmitter, which emits a modulated infrared 
-                        (IR) beam, and a receiver, which detects interruptions in the beam via hardware filtering and triggers an alert. Through a comprehensive 
-                        exploration of design choices, experimentation, and testing, this report provides insights into the development of a 
-                        safety system that performs effectively under diverse lighting conditions, while also incorporating an SMS alert feature. </p>
+                    <p class="mb-2">The electric eye safety system uses an infrared beam and receiver with hardware filtering 
+                        (BJTs, MOSFETs, diodes, capacitors) to detect obstructions and trigger alerts. It addresses the need 
+                        for reliable sensor data in safety-critical applications, functioning well under varying lighting 
+                        conditions, and includes an SMS alert feature. </p>
                     <span class="inline-block py-1 px-2 text-sm font-bold leading-none text-white rounded bg-green-500 mt-2">Nov 2023</span>
                     <div class="flex flex-wrap">
                         <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 last:mr-0 mr-1">
