@@ -116,7 +116,6 @@ const skills = [
 		icon: <Terminal className="w-6 h-6" />,
 		items: [
 			{ name: 'Windows', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Ubuntu', icon: <Terminal className="w-4 h-4" /> },
 			{ name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
 		]
 	},
