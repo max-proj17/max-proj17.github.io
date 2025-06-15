@@ -8,41 +8,23 @@ import Image from 'next/image';
 const Education = () => {
 	const educationData = [
 		{
-			school: "Bengal College of Engineering and Technology",
-			location: "Durgapur, WB, India",
-			duration: "July 2020 - June 2024",
-			degree: "B.Tech (Computer Science and Engineering)",
-			grade: "CGPA: 8.48 (80%)",
-			image: "/education/college_img.jpg",
-			resultUrl: "/files/education_pdf/B Tech.pdf",
+			school: "The University of Iowa",
+			location: "Iowa City, IA, USA",
+			duration: "September 2020 - Spring 2024",
+			degree: "B.S. in Electrical Engineering",
+			image: "/education/iowa.jpg",
 			coursework: [
-				"DSA",
-				"OOPs",
-				"DBMS",
-				"AI",
-				"ML",
-				"OS",
-				"Networking",
+				"Embedded Systems",
+				"Differential Equations",
+				"Nonlinear Control Systems",
+				"Computer Architecture",
+				"Software Design",
+				"Algorithims",
+				"Applied Machine Learning",
 			],
-			description: "During my time at BCET, I have built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges has helped me enhance my technical and analytical skills. This experience prepares me for a future in software development, equipping me with the ability to create scalable and efficient solutions."
+			description: "At the University of Iowa, I developed a strong foundation in systems-level software engineering, with a focus on writing high-performance, reliable code for embedded and control applications. Through hands-on research in a NASA-funded program, I gained experience building critical software under real-world constraints—delivering tools for data acquisition, hardware communication, and satellite simulation on tight deadlines."
 		},
-		{
-			school: "Birsingha Bhagabati Vidyalaya",
-			location: "Medinipur, WB, India",
-			duration: "June 2018 - July 2019",
-			degree: "Higher Secondary (WBSC)",
-			grade: "Percentage: 79%",
-			image: "/education/school_img.jpg",
-			resultUrl: "/files/education_pdf/HS MARK SHEET.pdf",
-			subjects: [
-				"Physics",
-				"Chemistry",
-				"Mathematics",
-				"Biology",
-				"Computer Science"
-			],
-			description: "My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science has been instrumental in shaping my passion for software development, enabling me to approach complex technical challenges with confidence."
-		}
+		
 	];
 
 	return (
@@ -92,10 +74,6 @@ const Education = () => {
 												<MapPin className="w-4 h-4" />
 												<span>{edu.location}</span>
 											</div>
-											<div className="flex items-center gap-2 text-gray-300">
-												<Award className="w-4 h-4" />
-												<span>{edu.grade}</span>
-											</div>
 										</div>
 									</div>
 								</div>
@@ -126,32 +104,7 @@ const Education = () => {
 											</div>
 										</div>
 									)}
-
-									{edu.subjects && (
-										<div className="mb-6">
-											<div className="flex flex-wrap gap-2">
-												{edu.subjects.map((subject) => (
-													<span
-														key={subject}
-														className="px-3 py-1 bg-white/10 rounded-full text-sm"
-													>
-														{subject}
-													</span>
-												))}
-											</div>
-										</div>
-									)}
-
-									<motion.a
-										href={edu.resultUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
-										whileHover={{ scale: 1.02 }}
-									>
-										View Result
-										<ExternalLink className="w-4 h-4" />
-									</motion.a>
+									
 								</div>
 							</div>
 						</motion.div>

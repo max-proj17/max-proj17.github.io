@@ -9,13 +9,13 @@ const searchData = [
 		title: 'Home',
 		description: 'Go to the welcome page',
 		path: '/',
-		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio', 'niladri', 'niladri chatterjee', 'niladri1', 'software developer', 'full stack developer', 'mern stack', 'web developer']
+		keywords: ['home', 'cv', 'resume', 'start', 'welcome', 'portfolio', 'max', 'Maximelio Finch', 'max-proj17', 'software developer', 'full stack developer', 'mern stack', 'web developer']
 	},
 	{
 		title: 'About',
 		description: 'Learn more about me and my background',
 		path: '/about',
-		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume', 'niladri', 'chatterjee', 'full stack developer', 'software engineer', 'web developer']
+		keywords: ['about', 'background', 'education', 'bio', 'profile', 'cv', 'resume', 'max-proj17', 'chatterjee', 'full stack developer', 'software engineer', 'web developer']
 	},
 	{
 		title: 'Education',
@@ -46,12 +46,6 @@ const searchData = [
 		description: 'View my certifications and achievements',
 		path: '/certificates',
 		keywords: ['certificates', 'certifications', 'achievements', 'courses', 'learning', 'skills', 'professional', 'development', 'awards', 'badges']
-	},
-	{
-		title: 'Contact',
-		description: 'Get in touch with me',
-		path: '/contact',
-		keywords: ['contact', 'email', 'message', 'connect', 'hire', 'freelance', 'work', 'collaboration', 'job', 'opportunity']
 	}
 ];
 

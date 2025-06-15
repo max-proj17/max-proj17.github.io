@@ -3,32 +3,54 @@
 import { motion } from 'framer-motion';
 import { Code2, Briefcase, GraduationCap, Award, Users, Globe } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
+import {EagleScout} from '@/components/TechLogos';
 
 const About = () => {
 	const achievements = [
 		{
 			icon: <Code2 className="w-6 h-6" />,
 			title: "10+ Projects",
-			description: "Completed full-stack web applications"
+			description: "Completed high performance C/C++ applications"
 		},
 		{
 			icon: <Briefcase className="w-6 h-6" />,
-			title: "3+ Internships",
-			description: "Professional work experience"
+			title: "3+ Years",
+			description: "Of professional work experience"
 		},
 		{
 			icon: <GraduationCap className="w-6 h-6" />,
-			title: "8.48 CGPA",
-			description: "Academic excellence"
+			title: "2+ Research Internships",
+			description: "For NASA & The University of Iowa"
+		},
+		{
+			icon: <Briefcase />,
+			title: "Eagle Scout",
+			description: "Earned in 2017"
+		},
+		{
+			icon: <Code2 className="w-6 h-6" />,
+			title: "UIOWA Hackathon 2023 Champion",
+			description: "Won best integration and use of AI"
+		},
+		{
+			icon: <GraduationCap className="w-6 h-6" />,
+			title: "Chicago Engineer Foundation Scholarship",
+			description: "4 year recipient for maintaining a 3.2+ GPA"
+		},
+		{
+			icon: <Briefcase className="w-6 h-6" />,
+			title: "Hu Shin Kai Alumni",
+			description: "Black Belt in Shotokan Karate, 2018"
 		}
+		
 	];
 
 	const interests = [
-		"Web Development",
-		"UI/UX Design",
-		"Cloud Computing",
-		"DevOps",
-		"Open Source",
+		"Robotics",
+		"High-Performance C/C++",
+		"Embedded Systems",
+		"Control Systems",
+		"Sensor Fusion & State Estimation",
 		"Artificial Intelligence"
 	];
 
@@ -45,7 +67,7 @@ const About = () => {
 					<div className="aspect-square overflow-hidden rounded-2xl">
 						<img
 							src="/profile/profile.jpg"
-							alt="Niladri Chatterjee"
+							alt="Maximelio Finch"
 							className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
 						/>
 					</div>
@@ -54,13 +76,13 @@ const About = () => {
 				<ScrollAnimation className="space-y-6">
 					<div className="space-y-4">
 						<p className="text-gray-300 leading-relaxed">
-							Hi! I'm a passionate full-stack developer with expertise in building modern web applications. My journey in tech started during my college years, where I discovered my love for creating innovative solutions through code.
+							I’m currently an Autonomy Software Engineer at Hexagon | Autonomy & Positioning, with a B.S. in Electrical and Computer Engineering from the University of Iowa. I specialize in robotics and embedded software, with a focus on high-performance C++ development, real-time systems, and multi-sensor fusion.
 						</p>
 						<p className="text-gray-300 leading-relaxed">
-							Currently pursuing my B.Tech in Computer Science, I've maintained a strong academic record while actively engaging in real-world projects and internships. This blend of theoretical knowledge and practical experience has shaped my approach to problem-solving and software development.
+							My work spans across the robotics software stack—from bare-metal firmware to full Linux-based autonomy systems. I work daily with C/C++, Python, Docker, Git, RTOS, and Linux, and have extensive experience with communication protocols such as SPI, I2C, CAN, BLE, and Wi-Fi. I’m also deeply familiar with DDS-based messaging systems and containerized simulation environments using Gazebo and ROS 2.
 						</p>
 						<p className="text-gray-300 leading-relaxed">
-							I specialize in React, Node.js, and modern web technologies, with a keen interest in creating performant and user-friendly applications. My experience includes working with various startups and contributing to open-source projects.
+							In both professional and personal projects, I’ve designed, integrated, and tested embedded systems for robotics applications—prioritizing performance, reliability, and real-time responsiveness.
 						</p>
 					</div>
 
@@ -68,7 +90,7 @@ const About = () => {
 						<div className="pt-4">
 							<h3 className="text-2xl font-semibold mb-4 gradient-text">Quick Facts</h3>
 							<ul className="list-none space-y-3">
-								{["Based in Kolkata, WB, India", "B.Tech in Computer Science", "CGPA: 8.48"].map((fact, index) => (
+								{["Based in Chicago, IL", "B.S. in Electrical Engineering"].map((fact, index) => (
 									<motion.li
 										key={fact}
 										className="flex items-center space-x-2 text-gray-300"
@@ -83,14 +105,7 @@ const About = () => {
 
 					<ScrollAnimation>
 						<div className="flex justify-start space-x-4">
-							<a
-								href="/files/cv_pdf/Niladri_Chatterjee(CV).pdf"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"
-							>
-								Download CV
-							</a>
+
 							<a
 								href="/skills"
 								className="px-6 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors"

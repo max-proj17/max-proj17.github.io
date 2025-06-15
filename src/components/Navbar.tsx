@@ -17,9 +17,7 @@ const Navbar = () => {
 		{ path: '/education', label: 'Education' },
 		{ path: '/experience', label: 'Experience' },
 		{ path: '/skills', label: 'Skills' },
-		{ path: '/projects', label: 'Projects' },
-		{ path: '/certificates', label: 'Certificates' },
-		{ path: '/contact', label: 'Contact' }
+		{ path: '/projects', label: 'Projects' }
 	];
 
 	return (
@@ -37,7 +35,7 @@ const Navbar = () => {
 						{/* Logo */}
 						<Link href="/" className="flex items-center space-x-3">
 							<Code2 className="w-8 h-8 text-white" />
-							<span className="text-xl font-bold text-white">Niladri</span>
+							<span className="text-xl font-bold text-white">Maximelio</span>
 						</Link>
 
 						{/* Desktop Navigation */}

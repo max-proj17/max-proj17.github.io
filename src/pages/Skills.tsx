@@ -9,19 +9,75 @@ import { ScrollAnimation } from '@/components/ScrollAnimation';
 import {
 	CppLogo, PythonLogo, JavaScriptLogo, HTML5Logo,
 	CSSLogo, ReactLogo, TypeScriptLogo, NodeLogo, MySQLLogo,
-	MongoDBLogo, VSCodeLogo, GitLogo, TailwindLogo, ShadCNLogo, NextjsLogo,
-	VirtualBoxLogo, VercelLogo
+	VSCodeLogo, GitLogo, ROS2, Docker, Jira, Linux, Tensorflow,
+	Plotly, FreeCad, Expressif, RaspberryPi, Pytest, Micropython, 
+	Pytorch, OpenAI, OpenCV, Bash, JFrog, Nvidia, MQTT, Qt, OCULUS,
+	NASA, Firebase, KiCad
 } from '@/components/TechLogos';
+
+// Add: Twilio, Clion, PyCharm, Arduino
 
 const skills = [
 	{
 		category: 'Programming Languages',
 		icon: <Code2 className="w-6 h-6" />,
 		items: [
-			{ name: 'C++', icon: <CppLogo /> },
+			{ name: 'C/C++', icon: <CppLogo /> },
+			{ name: 'AVR Assembly'},
 			{ name: 'Python', icon: <PythonLogo /> },
+			{ name: 'MicroPython', icon: <Micropython /> },
 			{ name: 'JavaScript', icon: <JavaScriptLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
+			{ name: 'TypeScript', icon: <TypeScriptLogo /> },
+			{ name: 'Java' },
+			{ name: 'Bash', icon: <Bash /> }
+		]
+	},
+	{
+		category: 'Testing Frameworks',
+		icon: <Terminal className="w-6 h-6" />,
+		items: [
+			{ name: 'Google Test'},
+			{ name: 'PyTest', icon: <Pytest /> },
+			{ name: 'JUnit'},
+		]
+	},
+	{
+		category: 'Robotics & Machine Learning',
+		icon: <Terminal className="w-6 h-6" />,
+		items: [
+			{ name: 'ROS2', icon: <ROS2 /> },
+			{ name: 'Isaac ROS', icon: <Nvidia /> },
+			{ name: 'PyTorch', icon: <Pytorch /> },
+			{ name: 'TensorFlow', icon: <Tensorflow /> },
+			{ name: 'OpenCV'},
+			{ name: 'Gazebo'},
+			{ name: 'RViz'},
+			{ name: 'PyBullet'}
+		]
+	},
+	{
+		category: 'Embedded Development Platforms',
+		icon: <Terminal className="w-6 h-6" />,
+		items: [
+			{ name: 'Jeston Xavier', icon: <Nvidia /> },
+			{ name: 'ESP32-S3', icon: <Expressif /> },
+			{ name: 'Raspberry Pi', icon: <RaspberryPi /> },
+			{ name: 'Arduino'},
+		]
+	},
+	{
+		category: 'Communication Protocols',
+		icon: <Terminal className="w-6 h-6" />,
+		items: [
+			{ name: 'Ethernet'},
+			{ name: 'MQTT'},
+			{ name: 'Bluetooth'},
+			{ name: 'TCP'},
+			{ name: 'UDP'},
+			{ name: 'SPI'},
+			{ name: 'I2C'},
+			{ name: 'CAN'},
+			{ name: 'SSH'}
 		]
 	},
 	{
@@ -30,8 +86,8 @@ const skills = [
 		items: [
 			{ name: 'HTML5', icon: <HTML5Logo /> },
 			{ name: 'CSS3', icon: <CSSLogo /> },
-			{ name: 'Tailwind', icon: <TailwindLogo /> },
-			{ name: 'ShadCN', icon: <ShadCNLogo /> }
+			{ name: 'Qt', icon: <Qt /> },
+
 		]
 	},
 	{
@@ -40,18 +96,8 @@ const skills = [
 		items: [
 			{ name: 'React.js', icon: <ReactLogo /> },
 			{ name: 'Node.js', icon: <NodeLogo /> },
-			{ name: 'Next.js', icon: <NextjsLogo /> },
-			{ name: 'TypeScript', icon: <TypeScriptLogo /> }
-		]
-	},
-	{
-		category: 'Databases & Cloud Storage',
-		icon: <Database className="w-6 h-6" />,
-		items: [
-			{ name: 'MySQL', icon: <MySQLLogo /> },
-			{ name: 'MongoDB', icon: <MongoDBLogo /> },
-			{ name: 'Cloudinary', icon: <Cloud className="w-4 h-4" /> },
-			{ name: 'NoSQL', icon: <Database className="w-4 h-4" /> }
+			{ name: 'TypeScript', icon: <TypeScriptLogo /> },
+			{ name: 'Flask'}
 		]
 	},
 	{
@@ -60,18 +106,9 @@ const skills = [
 		items: [
 			{ name: 'Git', icon: <GitLogo /> },
 			{ name: 'GitHub', icon: <GitLogo /> },
-			{ name: 'Vercel', icon: <VercelLogo /> },
+			{ name: 'Docker', icon: <Docker /> },
+			{ name: 'JFrog', icon: <JFrog /> },
 			{ name: 'CI/CD', icon: <Code2 /> }
-		]
-	},
-	{
-		category: 'Tools & Platforms',
-		icon: <Wrench className="w-6 h-6" />,
-		items: [
-			{ name: 'VS Code', icon: <VSCodeLogo /> },
-			{ name: 'Workbench', icon: <MySQLLogo /> },
-			{ name: 'Compass', icon: <MongoDBLogo /> },
-			{ name: 'VirtualBox', icon: <VirtualBoxLogo /> }
 		]
 	},
 	{
@@ -81,7 +118,26 @@ const skills = [
 			{ name: 'Windows', icon: <Terminal className="w-4 h-4" /> },
 			{ name: 'Ubuntu', icon: <Terminal className="w-4 h-4" /> },
 			{ name: 'Linux', icon: <Terminal className="w-4 h-4" /> },
-			{ name: 'Parrot OS', icon: <Terminal className="w-4 h-4" /> }
+		]
+	},
+	{
+		category: 'Tools & Platforms',
+		icon: <Wrench className="w-6 h-6" />,
+		items: [
+			{ name: 'VS Code', icon: <VSCodeLogo /> },
+			{ name: 'Jira', icon: <Jira /> },
+			{ name: 'Workbench', icon: <MySQLLogo /> },
+			{ name: 'KiCad', icon: <KiCad /> },
+			{ name: 'FreeCAD', icon: <FreeCad /> }
+			//Add Clion, Pycharm, etc
+		]
+	},
+	{
+		category: 'Databases & Cloud Storage',
+		icon: <Database className="w-6 h-6" />,
+		items: [
+			{ name: 'MySQL', icon: <MySQLLogo /> },
+			{ name: 'Firebase', icon: <Firebase /> }
 		]
 	},
 	{
