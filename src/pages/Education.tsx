@@ -11,7 +11,7 @@ const Education = () => {
 			school: "The University of Iowa",
 			location: "Iowa City, IA, USA",
 			duration: "September 2020 - Spring 2024",
-			degree: "B.S. in Electrical Engineering",
+			degree: "B.S.E in Electrical Engineering",
 			image: "/education/iowa.jpg",
 			coursework: [
 				"Embedded Systems",
