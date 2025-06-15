@@ -129,9 +129,6 @@ const Projects = () => {
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
                     <Github className="w-4 h-4" /><span>Code</span>
                   </a>
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
-                    <ExternalLink className="w-4 h-4" /><span>Live</span>
-                  </a>
                 </div>
               </div>
             </div>
